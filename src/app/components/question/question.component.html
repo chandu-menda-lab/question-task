@@ -1,0 +1,23 @@
+<!-- src/app/components/question/question.component.html -->
+
+<div class="question">
+  <label>{{ question.text }}</label>
+  <div *ngIf="question.type === 'radio'">
+    <div *ngFor="let option of question.options">
+      <input type="radio" [value]="option" name="{{ question.id }}" (change)="onOptionChange($event)">{{ option }}
+    </div>
+  </div>
+  <div *ngIf="question.type === 'checkbox'">
+    <div *ngFor="let option of question.options">
+      <input type="checkbox" [value]="option" name="{{ question.id }}" (change)="onOptionChange($event)">{{ option }}
+    </div>
+  </div>
+  <div *ngIf="question.type === 'select'">
+    <select (change)="onOptionChange($event)">
+      <option *ngFor="let option of question.options" [value]="option">{{ option }}</option>
+    </select>
+  </div>
+  <div *ngIf="question.type === 'text'">
+    <input type="text" [value]="" name="{{ question.id }}" (change)="onOptionChange($event)">
+  </div>
+</div>

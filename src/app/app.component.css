@@ -1,0 +1,10 @@
+/* styles.css */
+nav a {
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,117 @@
+[
+  {
+    "id": 3,
+    "text": "Please provide additional comments:",
+    "type": "text"
+  },
+  {
+    "id": 1,
+    "text": "What is your favorite color?",
+    "type": "select",
+    "options": ["Red", "Blue", "Green"],
+    "children": [
+      {
+        "id": 4,
+        "text": "Why do you like Red?",
+        "type": "text",
+        "dependsOn": "Red"
+      },
+      {
+        "id": 5,
+        "text": "Why do you like Blue?",
+        "type": "text",
+        "dependsOn": "Blue"
+      },
+      {
+        "id": 6,
+        "text": "Why do you like Green?",
+        "type": "text",
+        "dependsOn": "Green"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "What is your favorite animal?",
+    "type": "radio",
+    "options": ["Dog", "Cat"],
+    "children": [
+      {
+        "id": 7,
+        "text": "Why do you like Dogs?",
+        "type": "text",
+        "dependsOn": "Dog"
+      },
+      {
+        "id": 8,
+        "text": "Why do you like Cats?",
+        "type": "text",
+        "dependsOn": "Cat"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "What is your favorite season?",
+    "type": "select",
+    "options": ["Spring", "Summer", "Fall", "Winter"],
+    "children": [
+      {
+        "id": 10,
+        "text": "Why do you like Spring?",
+        "type": "text",
+        "dependsOn": "Spring"
+      },
+      {
+        "id": 11,
+        "text": "Why do you like Summer?",
+        "type": "text",
+        "dependsOn": "Summer"
+      },
+      {
+        "id": 12,
+        "text": "Why do you like Fall?",
+        "type": "text",
+        "dependsOn": "Fall"
+      },
+      {
+        "id": 13,
+        "text": "Why do you like Winter?",
+        "type": "text",
+        "dependsOn": "Winter"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "What is your preferred mode of transportation?",
+    "type": "radio",
+    "options": ["Car", "Bike", "Public Transport", "Walking"],
+    "children": [
+      {
+        "id": 15,
+        "text": "Why do you prefer Car?",
+        "type": "text",
+        "dependsOn": "Car"
+      },
+      {
+        "id": 16,
+        "text": "Why do you prefer Bike?",
+        "type": "text",
+        "dependsOn": "Bike"
+      },
+      {
+        "id": 17,
+        "text": "Why do you prefer Public Transport?",
+        "type": "text",
+        "dependsOn": "Public Transport"
+      },
+      {
+        "id": 18,
+        "text": "Why do you prefer Walking?",
+        "type": "text",
+        "dependsOn": "Walking"
+      }
+    ]
+  }
+]

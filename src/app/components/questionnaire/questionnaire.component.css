@@ -1,0 +1,13 @@
+.container {
+    margin: 20px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+    display:flex;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+  

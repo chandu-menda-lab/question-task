@@ -1,0 +1,11 @@
+<!-- src/app/components/summary/summary.component.html -->
+
+<div class="container">    
+    <h2>Summary of Responses</h2>
+    <ul>
+      <li *ngFor="let response of responses">
+        Question ID: {{ response.questionId }} - Answer: {{ response.selectedOption }}
+      </li>
+    </ul>
+  </div>
+  

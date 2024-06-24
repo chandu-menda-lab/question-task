@@ -1,0 +1,16 @@
+<!-- src/app/components/questionnaire/questionnaire.component.html -->
+
+<div class="container">
+  <div class="questionnaire">
+    <div *ngFor="let question of questions; let i = index">
+      <div class="question">
+        <button (click)="moveUp(i)" [disabled]="i === 0">Move Up</button>
+        <button (click)="moveDown(i)" [disabled]="i === questions.length - 1">Move Down</button>
+      </div>
+      <app-question [question]="question" (responseChange)="onResponseChange($event)"></app-question>
+      <app-child-questions [parentQuestion]="question"></app-child-questions>
+      <hr *ngIf="questions.length-1 != i" />
+    </div>
+    <button (click)="goToSummary()">Go to Summary</button>
+  </div>
+</div>

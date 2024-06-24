@@ -1,0 +1,7 @@
+<!-- src/app/components/child-questions/child-questions.component.html -->
+
+<div *ngIf="childQuestions.length > 0">
+  <div *ngFor="let question of childQuestions" class="child-question">
+    <app-question [question]="question" (responseChange)="onResponseChange($event)"></app-question>
+  </div>
+</div>
